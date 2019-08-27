@@ -1,7 +1,5 @@
 package algorithms;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 /**
  * Euclid's greatest common divisor computation
  * Two ways, first the loop way, then recursively
