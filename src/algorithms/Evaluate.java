@@ -1,3 +1,5 @@
+package algorithms;
+
 /**
  * Similar to Dijkstra's way of evaluating arithmetic expressions
  *
