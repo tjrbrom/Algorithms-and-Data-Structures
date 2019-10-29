@@ -1,5 +1,7 @@
 package algorithms;
 
+import java.util.Stack;
+
 /**
  * Similar to Dijkstra's way of evaluating arithmetic expressions
  *
