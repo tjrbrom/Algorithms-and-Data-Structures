@@ -1,3 +1,5 @@
+package algorithms;
+
 /**
  *	Check if a String is palindrome, with and without recursion.
  */
