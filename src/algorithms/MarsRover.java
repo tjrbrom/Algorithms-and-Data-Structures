@@ -1,4 +1,14 @@
-
+/**
+ * 5x5 (x y) array
+ *
+ * An example position might be 0, 0, N,
+ * which means the rover is in the bottom left corner and facing North.
+ *
+ * L (90 degrees left), R(90 degrees right), M(move forward)
+ *
+ * Assume that the square directly North from (x, y) is (x, y + 1).
+ *
+ */
 class Rover {
 
     int x;
