@@ -5,7 +5,9 @@ import java.util.Arrays;
 /**
  * Worst case: O(n squared)
  * <p>
- * Unstable, but doesn't require as much shifting as insertion sort.
+ * Unstable, but doesn't require as much shifting as insertion sort
+ *
+ * Shellsort is much faster than insertion or selection sort, and its speed advantage increases with the input size
  */
 public class ShellSort {
 
