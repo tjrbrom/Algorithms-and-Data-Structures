@@ -66,5 +66,44 @@ public class Parentheses {
         String nb = "[)]{]}";
         System.out.println(nb + " is balanced: " + isBalanced(nb));
     }
+    
+    /**
+     * It could also be implemented without a Stack structure
+     *
+     * // NOTE: not very optimized ^^ lot's of similar ifs, but I'm bored right now...
+     *
+     * @param input
+     * @return if it's balanced
+     */
+    public static boolean isBalancedWithoutStack(String input) {
+        int countParentheses = 0;
+        int countBrackets = 0;
+        int countSquareBrackets = 0;
+
+        char[] chars = input.toCharArray();
+
+        for (int i = 0; i < chars.length; ++i) {
+            char ch = chars[i];
+            if ( ch == '(' ) {
+                ++countParentheses;
+            } else if ( ch == ')' ) {
+                --countParentheses;
+                if (countParentheses < 0) return false;
+            }
+            if ( ch == '[' ) {
+                ++countBrackets;
+            } else if ( ch == ']' ) {
+                --countBrackets;
+                if (countBrackets < 0) return false;
+            }
+            if ( ch == '{' ) {
+                ++countSquareBrackets;
+            } else if ( ch == '}' ) {
+                --countSquareBrackets;
+                if (countSquareBrackets < 0) return false;
+            }
+        }
+        return (countParentheses + countBrackets + countSquareBrackets == 0);
+    }
 
 }
