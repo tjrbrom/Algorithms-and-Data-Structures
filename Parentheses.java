@@ -55,7 +55,6 @@ public class Parentheses {
         return stack.isEmpty();
     }
 
-
     public static void main(String[] args) {
 
         String b = "[()]{}{[()()]()}";
